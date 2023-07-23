@@ -1,4 +1,4 @@
-# Golang Data
+# Go Data
 
 ### This project was inspired by [Spring Data](https://spring.io/projects/spring-data)
 
