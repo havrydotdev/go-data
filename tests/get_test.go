@@ -21,7 +21,7 @@ var r *data.SQLRepository[int, Test]
 var pgx *tc.PostgresContainer
 
 type Test struct {
-	ID    int
+	ID    int `db:"id"`
 	Name  string
 	Count int
 }

@@ -14,7 +14,7 @@ func (r *SQLRepository[K, T]) GetAll() ([]T, error) {
 
 func (r *SQLRepository[K, T]) GetById(id K) (T, error) {
 	res := *new(T)
-	err := r.db.Get(&res, getById(T.GetTableName(*new(T))), id)
+	err := r.db.Get(&res, getById(T.GetTableName(res)), id)
 	if err != nil {
 		return *new(T), err
 	}
